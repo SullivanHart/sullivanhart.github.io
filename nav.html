@@ -27,10 +27,26 @@
     "></script>
 </head>
 <body class="transition-enabled">
-    <div class="js-responsive-nav">
-        <div class="responsive-nav">
-            <div class="responsive-nav__contents">
-                <div class="close-responsive-click-area js-close-responsive-nav">
+        <div style="
+        opacity: 0;
+        visibility: hidden;
+        background-color: #757969;
+        bottom: 0;
+        display: flex;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 50px 5% 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        transition: visibility 0s ease 0.2s, opacity 0.2s ease 0s;
+        z-index: 99999">
+            <div style="
+            margin: auto;
+            width: 100%">
                 <div class="page-title">
                     <a href="sullivanhart.github.io" class="active">MAIN</a>
                 </div>
@@ -49,10 +65,8 @@
                 <div class="gallery-title">
                     <a href="/projects">PROJECTS</a>
                 </div>
-            </nav>
+            </div>
         </div>
-    </div>
-    </div>
 </body>
 <script type="text/javascript">
     // fix for Safari's back/forward cache
