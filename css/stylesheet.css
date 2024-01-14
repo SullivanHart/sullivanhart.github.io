@@ -516,10 +516,63 @@
     top: 0;
     width: 100%; }
   
-  .responsive-nav {
-    display: flex;
-    opacity: 1;
-    visibility: visible; }
+    .responsive-nav {
+        background-color: #3A5A40;
+        bottom: 0;
+        display: flex;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 50px 5% 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        transition: visibility 0s ease 0.2s, opacity 0.2s ease 0s;
+        z-index: 99999; }
+        .responsive-nav nav {
+          float: none;
+          margin: auto;
+          max-width: 100%;
+          width: 100%; }
+        .responsive-nav.has-social nav {
+          padding-bottom: 80px; }
+        .responsive-nav .nav-container {
+          width: 100%; }
+        .responsive-nav .page-title,
+        .responsive-nav .project-title,
+        .responsive-nav .link-title,
+        .responsive-nav .gallery-title {
+          display: block;
+          text-align: center; }
+          .responsive-nav .page-title a,
+          .responsive-nav .project-title a,
+          .responsive-nav .link-title a,
+          .responsive-nav .gallery-title a {
+            font-size: 22px;
+            line-height: 32px; }
+        .responsive-nav .page-title,
+        .responsive-nav .project-title,
+        .responsive-nav .link-title,
+        .responsive-nav .gallery-title {
+          padding: 0 0 30px; }
+        .responsive-nav .group {
+          padding: 0; }
+        .responsive-nav .social {
+          text-align: center;
+          width: 100%; }
+          .responsive-nav .social svg {
+            width: 32px; }
+          .responsive-nav .social li {
+            display: inline-block;
+            float: none !important;
+            padding: 0 20px 20px 0; }
+            .responsive-nav .social li:last-child {
+              padding-right: 0; }
+      .responsive-nav__contents {
+        margin: auto;
+        width: 100%; }
   
   .project-cover .separator:last-child,
   .project-header .fields .separator:last-child {
