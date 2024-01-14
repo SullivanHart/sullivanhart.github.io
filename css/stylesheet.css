@@ -519,7 +519,7 @@
   .responsive-nav {
     display: flex;
     opacity: 0;
-    visibility: hidden; }
+    visibility: visible; }
   
   .project-cover .separator:last-child,
   .project-header .fields .separator:last-child {
