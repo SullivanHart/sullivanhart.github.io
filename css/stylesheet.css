@@ -1446,7 +1446,7 @@
       .site-header .hamburger-click-area {
         right: calc(-5% + 20px); }
       .site-header .pf-nav-social {
-        display: none; }
+        display: flex; }
     .responsive-nav,
     .responsive-nav .social {
       background-color: #3A5A40 !important; } }
