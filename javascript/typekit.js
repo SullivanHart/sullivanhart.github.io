@@ -22,7 +22,7 @@ window.Typekit.config = {
     "fc": [{
         "id": 41110,
         "family": "fznc",
-        "src": "https://use.typekit.net/af/5eb19c/00000000000000007735b7d0/30/{format}{?primer,subset_id,fvd,v}",
+        "src": "/font/af/5eb19c/I",
         "descriptors": {
             "weight": "500",
             "style": "normal",
@@ -34,7 +34,7 @@ window.Typekit.config = {
     }, {
         "id": 41078,
         "family": "fznc",
-        "src": "https://use.typekit.net/af/c4fccd/00000000000000007735b7c0/30/{format}{?primer,subset_id,fvd,v}",
+        "src": "/font/af/c4fccd/I",
         "descriptors": {
             "weight": "600",
             "style": "normal",
@@ -46,7 +46,7 @@ window.Typekit.config = {
     }, {
         "id": 41097,
         "family": "fznc",
-        "src": "https://use.typekit.net/af/975d46/00000000000000007735b7c3/30/{format}{?primer,subset_id,fvd,v}",
+        "src": "/font/af/975d46/I",
         "descriptors": {
             "weight": "700",
             "style": "normal",
@@ -58,7 +58,7 @@ window.Typekit.config = {
     }, {
         "id": 41077,
         "family": "fznc",
-        "src": "https://use.typekit.net/af/e4ad82/00000000000000007735b7bc/30/{format}{?primer,subset_id,fvd,v}",
+        "src": "/font/af/e4ad82/I",
         "descriptors": {
             "weight": "800",
             "style": "normal",
@@ -70,7 +70,7 @@ window.Typekit.config = {
     }, {
         "id": 41108,
         "family": "fznc",
-        "src": "https://use.typekit.net/af/7d6541/00000000000000007735b7c8/30/{format}{?primer,subset_id,fvd,v}",
+        "src": "/font/af/7d6541/I",
         "descriptors": {
             "weight": "900",
             "style": "normal",
