@@ -518,7 +518,7 @@
   
   .responsive-nav {
     display: flex;
-    opacity: 0;
+    opacity: 1;
     visibility: visible; }
   
   .project-cover .separator:last-child,
