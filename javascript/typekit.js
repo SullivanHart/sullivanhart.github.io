@@ -87,7 +87,7 @@ window.Typekit.config = {
     "kt": "359713_7977182ef59b0873a9e3cf0f9f3678fc5506f14c",
     "l": "typekit",
     "ps": 2,
-    "ping": "https://p.typekit.net/p.gif{?s,k,ht,h,f,a,js,app,e,_}",
+    "ping": "",
     "pm": true,
     "type": "configurable"
 };
