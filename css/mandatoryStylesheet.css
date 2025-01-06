@@ -1,0 +1,37 @@
+/* ...existing code... */
+
+.page-header .title {
+  color: #3a5a40;
+  font-family: fznc;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: none;
+  width: 100%;
+}
+
+.page-content .rich-text {
+  color: #5d6449;
+  font-family: fznc;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  text-align: center;
+  text-transform: none;
+}
+
+.page-content .rich-text a {
+  color: #5d6449;
+}
+
+.page-content .rich-text a:hover {
+  color: #3a3f2c;
+  text-transform: none;
+}
