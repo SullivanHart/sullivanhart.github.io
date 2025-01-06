@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Sullivan Hart, MIPS Processor, Computer Architecture"
+    />
+    <meta
+      name="description"
+      content="A term project in computer architecture, where I designed and implemented a MIPS processor using VHDL."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Sullivan Hart's Portfolio" />
+    <meta property="og:title" content="MIPS Processor Project" />
+    <meta
+      property="og:description"
+      content="My term project for my computer architecture course, where I created a MIPS processor from digital logic."
+    />
+    <meta
+      property="og:image"
+      content="/images/Projects/MIPS Processor/mips_overview.jpg"
+    />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/css/robotStylesheet.css" type="text/css" />
+    <link rel="canonical" href="/mips-processor-project" />
+    <title>MIPS Processor Project</title>
+    <script
+      type="text/javascript"
+      src="/javascript/typekit.js"
+      async
+      onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "
+    ></script>
+  </head>
+
+  <body class="transition-enabled">
+    <div class="site-wrap cfix">
+      <div class="site-container">
+        <div class="site-content e2e-site-content">
+          <header
+            class="site-header js-site-header"
+            data-context="theme.nav"
+            data-hover-hint="nav"
+            data-hover-hint-placement="top-start"
+          >
+            <nav
+              class="nav-container"
+              data-hover-hint="nav"
+              data-hover-hint-placement="bottom-start"
+            >
+              <div class="page-title">
+                <a href="/">MAIN</a>
+              </div>
+              <div class="page-title">
+                <a href="/images/Resume/Resume.pdf" target="_blank">RESUME</a>
+              </div>
+              <div class="page-title">
+                <a href="/about">ABOUT ME</a>
+              </div>
+              <div class="page-title">
+                <a href="/previous-experience">PREVIOUS EXPERIENCE</a>
+              </div>
+              <div class="page-title">
+                <a href="/classes">CLASSES</a>
+              </div>
+              <div class="gallery-title"><a href="/projects">PROJECTS</a></div>
+              <div class="page-title">
+                <a href="/images/Essay/essay.pdf" target="_blank"
+                  >ETHICS ESSAY</a
+                >
+              </div>
+            </nav>
+            <div
+              class="logo-wrap"
+              data-context="theme.logo.header"
+              data-hover-hint="logo"
+              data-hover-hint-placement="bottom-start"
+            >
+              <div class="logo e2e-site-logo-text logo-text">
+                <a href="/" class="preserve-whitespace">SULLIVAN HART</a>
+              </div>
+            </div>
+            <a href="/nav">
+              <div class="hamburger-click-area js-hamburger">
+                <div class="hamburger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+            </a>
+          </header>
+          <main>
+            <div
+              class="page-container js-site-wrap"
+              data-context="page.page.container"
+              data-hover-hint="pageContainer"
+            >
+              <section class="page standard-modules">
+                <header
+                  class="page-header content"
+                  data-context="pages"
+                  data-identity="id:p656df808b78ff8affa4e29349c33a600909fbcb72861455f3c756"
+                  data-hover-hint="pageHeader"
+                  data-hover-hint-id="p656df808b78ff8affa4e29349c33a600909fbcb72861455f3c756"
+                >
+                  <h1 class="title preserve-whitespace e2e-site-logo-text">
+                    MIPS Processor Project
+                  </h1>
+                  <p class="description">
+                    My term project for computer architecture, where I designed
+                    and implemented a MIPS processor capable of running MIPS
+                    Assembly code, all created using VHDL.
+                  </p>
+                </header>
+                <div
+                  class="page-content js-page-content"
+                  data-context="pages"
+                  data-identity="id:p656df808b78ff8affa4e29349c33a600909fbcb72861455f3c756"
+                >
+                  <div
+                    id="project-canvas"
+                    class="js-project-modules modules content"
+                  >
+                    <div id="project-modules">
+                      <div
+                        class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree"
+                      >
+                        <div class="tree-wrapper valign-center">
+                          <div class="tree-child-wrapper" style="flex: 1">
+                            <div
+                              class="project-module module image project-module-image js-js-project-module"
+                              style="padding-top: px; padding-bottom: px"
+                            >
+                              <div class="js-lightbox">
+                                <img
+                                  class="js-lazy e2e-site-project-module-image"
+                                  src="/images/Projects/MIPS Processor/mips_block_diagram.png"
+                                  data-sizes="(max-width: 1170px) 100vw, 1170px"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tree-child-wrapper" style="flex: 1">
+                            <div
+                              class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text"
+                            >
+                              <div
+                                class="rich-text js-text-editable module-text"
+                              >
+                                <div>
+                                  <span
+                                    style="font-size: 25px"
+                                    class="texteditor-inline-fontsize"
+                                  >
+                                    <span
+                                      style="
+                                        font-family: fznc;
+                                        font-weight: 700;
+                                      "
+                                    >
+                                      The Project
+                                    </span>
+                                  </span>
+                                </div>
+                                <div>
+                                  In my Computer Architecture course, we were
+                                  tasked with implementing a MIPS processor from
+                                  scratch using VHDL. This project involved
+                                  creating a processor capable of executing MIPS
+                                  Assembly instructions.
+                                </div>
+                                <div>
+                                  The project was divided into several stages,
+                                  starting with understanding the MIPS
+                                  architecture, followed by designing and
+                                  implementing the control and data paths, and
+                                  finally integrating everything into a fully
+                                  functional processor.
+                                </div>
+                                <div>
+                                  This project challenged my understanding of
+                                  digital logic, VHDL coding, and the
+                                  intricacies of processor design. It was an
+                                  invaluable experience that deepened my
+                                  knowledge of computer architecture.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree"
+                      >
+                        <div class="tree-wrapper valign-center">
+                          <div class="tree-child-wrapper" style="flex: 117">
+                            <div
+                              class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text"
+                            >
+                              <div
+                                class="rich-text js-text-editable module-text"
+                              >
+                                <div>
+                                  <span
+                                    style="font-family: fznc; font-weight: 700"
+                                    ><span
+                                      style="font-size: 25px"
+                                      class="texteditor-inline-fontsize"
+                                      >Control Unit</span
+                                    ></span
+                                  >
+                                </div>
+                                <div>
+                                  The control unit is the heart of the
+                                  processor, coordinating the operations of the
+                                  datapath components. Designing the control
+                                  unit was a complex task, requiring a thorough
+                                  understanding of the MIPS instruction set and
+                                  how each instruction affects the processor's
+                                  state.
+                                </div>
+                                <div>
+                                  I implemented the control unit using finite
+                                  state machines (FSMs) in VHDL. Each state
+                                  corresponds to a phase of instruction
+                                  execution, from instruction fetch to memory
+                                  access and write-back.
+                                </div>
+                                <div>
+                                  By carefully managing these states, the
+                                  control unit ensures that the processor
+                                  executes instructions correctly and
+                                  efficiently.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tree-child-wrapper" style="flex: 83">
+                            <div
+                              class="project-module module image project-module-image js-js-project-module"
+                              style="padding-top: px; padding-bottom: px"
+                            >
+                              <div class="js-lightbox">
+                                <img
+                                  class="js-lazy e2e-site-project-module-image"
+                                  src="/images/Projects/MIPS Processor/control_unit.png"
+                                  data-sizes="(max-width: 3840px) 100vw, 3840px"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree"
+                      >
+                        <div class="tree-wrapper valign-center">
+                          <div class="tree-child-wrapper" style="flex: 89">
+                            <div
+                              class="project-module module image project-module-image js-js-project-module"
+                              style="padding-top: px; padding-bottom: px"
+                            >
+                              <div class="js-lightbox">
+                                <img
+                                  class="js-lazy e2e-site-project-module-image"
+                                  src="/images/Projects/MIPS Processor/data_path.png"
+                                  data-sizes="(max-width: 3840px) 100vw, 3840px"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tree-child-wrapper" style="flex: 89">
+                            <div
+                              class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text"
+                            >
+                              <div
+                                class="rich-text js-text-editable module-text"
+                              >
+                                <div>
+                                  <span
+                                    style="font-family: fznc; font-weight: 700"
+                                    ><span
+                                      style="font-size: 25px"
+                                      class="texteditor-inline-fontsize"
+                                      >Data Path</span
+                                    ></span
+                                  >
+                                </div>
+                                <div>
+                                  The data path is a crucial component of the
+                                  processor, responsible for data manipulation
+                                  and execution of instructions. Designing the
+                                  data path involved creating various registers,
+                                  multiplexers, and arithmetic logic units
+                                  (ALUs) to support different types of
+                                  operations.
+                                </div>
+                                <div>
+                                  I implemented the data path in VHDL, ensuring
+                                  it could handle various instructions and data
+                                  formats as specified by the MIPS architecture.
+                                </div>
+                                <div>
+                                  The design of the data path was integral to
+                                  the overall functionality of the processor,
+                                  enabling it to perform complex operations and
+                                  execute programs effectively.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </main>
+          <footer
+            class="site-footer"
+            data-context="theme.footer"
+            data-hover-hint="footer"
+            data-hover-hint-placement="top-start"
+          >
+            <div class="footer-content">
+              <div class="footer-logo">
+                <a href="/" class="preserve-whitespace">SULLIVAN HART</a>
+              </div>
+              <nav class="footer-nav">
+                <a href="/about">About Me</a> |
+                <a href="/projects">Projects</a> |
+                <a href="/contact">Contact</a>
+              </nav>
+              <div class="footer-social">
+                <a
+                  href="https://twitter.com/SullivanHart"
+                  target="_blank"
+                  aria-label="Twitter"
+                  ><img src="/images/icons/twitter.svg" alt="Twitter Icon"
+                /></a>
+                <a
+                  href="https://linkedin.com/in/sullivanhart"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><img src="/images/icons/linkedin.svg" alt="LinkedIn Icon"
+                /></a>
+                <a
+                  href="https://github.com/sullivanhart"
+                  target="_blank"
+                  aria-label="GitHub"
+                  ><img src="/images/icons/github.svg" alt="GitHub Icon"
+                /></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>
