@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Books</title>
+    <link rel="stylesheet" href="/css/aboutStylesheet.css" type="text/css" />
+    <style>
+      .download-link {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        background-color: #757d5f; /* Match color of project containers */
+        color: #e0dcc5; /* Match text color of project containers */
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .download-link:hover {
+        background-color: #e0dcc5; /* Match hover color of project containers */
+        color: #757d5f; /* Match text color on hover */
+      }
+      .subject h2 {
+        color: #3a5a40; /* Dark green color for subject titles */
+      }
+      .contact-form,
+      #password-container {
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #e0dcc5; /* Match background color */
+        border-radius: 8px;
+        color: #3a5a40; /* Match text color */
+      }
+      .contact-form h2,
+      #password-container h2 {
+        color: #3a5a40; /* Match header color */
+        text-align: center;
+        margin: 0; /* Remove outline around header */
+      }
+      .contact-form label,
+      .contact-form input,
+      .contact-form textarea,
+      #password-container input,
+      #password-container button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #757d5f; /* Match border color */
+        border-radius: 4px;
+        color: #3a5a40; /* Match text color */
+        outline: none; /* Remove outline */
+      }
+      #password-container label,
+      .contact-form label {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        color: #3a5a40; /* Match text color */
+        outline: none; /* Remove outline */
+        border: none; /* Ensure no border */
+      }
+      .contact-form input[type="submit"],
+      #password-container button {
+        background-color: #757d5f; /* Match button color */
+        color: #e0dcc5; /* Match button text color */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .contact-form input[type="submit"]:hover,
+      #password-container button:hover {
+        background-color: #3a5a40; /* Match button hover color */
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="/javascript/typekit.js"
+      async
+      onload="try { window.Typekit.load(); } catch (e) { console.warn('Typekit not loaded.'); }"
+    ></script>
+    <script>
+      function sendEmail(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        window.location.href = `mailto:sullivan.hart7@gmail.com?subject=Contact from ${name}&body=Email: ${email}%0D%0A%0D%0A${message}`;
+      }
+    </script>
+  </head>
+  <body class="transition-enabled">
+    <div id="password-container">
+      <h2>Enter Password</h2>
+      <label for="password-input">Password:</label>
+      <input type="password" id="password-input" />
+      <button onclick="checkPassword()">Submit</button>
+      <p id="error-message" style="color: red; display: none">
+        Incorrect password. Please try again.
+      </p>
+    </div>
+    <div id="content-container" style="display: none">
+      <div class="site-wrap cfix">
+        <div class="site-container">
+          <div class="site-content e2e-site-content">
+            <header
+              class="site-header js-site-header"
+              data-context="theme.nav"
+              data-hover-hint="nav"
+              data-hover-hint-placement="top-start"
+            >
+              <nav
+                class="nav-container"
+                data-hover-hint="nav"
+                data-hover-hint-placement="bottom-start"
+              >
+                <div class="page-title">
+                  <a href="/">MAIN</a>
+                </div>
+                <div class="page-title">
+                  <a href="/images/Resume/Resume.pdf" target="_blank">RESUME</a>
+                </div>
+                <div class="page-title">
+                  <a href="/about">ABOUT ME</a>
+                </div>
+                <div class="page-title">
+                  <a href="/previous-experience">PREVIOUS EXPERIENCE</a>
+                </div>
+                <div class="page-title">
+                  <a href="/classes">CLASSES</a>
+                </div>
+                <div class="gallery-title">
+                  <a href="/projects">PROJECTS</a>
+                </div>
+                <div class="page-title">
+                  <a href="/mandatory">MANDATORY DISCLOSURE</a>
+                </div>
+              </nav>
+              <div
+                class="logo-wrap"
+                data-context="theme.logo.header"
+                data-hover-hint="logo"
+                data-hover-hint-placement="bottom-start"
+              >
+                <div class="logo e2e-site-logo-text logo-text">
+                  <a href="/" class="preserve-whitespace">SULLIVAN HART</a>
+                </div>
+              </div>
+              <a href="/nav">
+                <div class="hamburger-click-area js-hamburger">
+                  <div class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+            </header>
+            <main>
+              <div
+                class="page-container js-site-wrap"
+                data-context="page.page.container"
+                data-hover-hint="pageContainer"
+              >
+                <section class="page standard-modules">
+                  <header
+                    class="page-header content"
+                    data-context="pages"
+                    data-identity="id:p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
+                    data-hover-hint="pageHeader"
+                    data-hover-hint-id="p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
+                  >
+                    <h1 class="title preserve-whitespace e2e-site-logo-text">
+                      Books
+                    </h1>
+                  </header>
+                  <div
+                    class="page-content js-page-content"
+                    data-context="pages"
+                    data-identity="id:p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
+                  >
+                    <div
+                      id="project-canvas"
+                      class="js-project-modules modules content"
+                    >
+                      <div id="books-container">
+                        <div class="subject">
+                          <h2>Chemical Engineering</h2>
+                          <a
+                            href="/books/CHEM%20E/CHEM%20E%20357%20-%20Fundamentals%20of%20Heat%20and%20Mass%20Transfer%20(Sol)%20-%207e.pdf"
+                            class="download-link"
+                            download
+                            >Download CHEM E 357 - Fundamentals of Heat and Mass
+                            Transfer (Sol) - 7e</a
+                          >
+                          <a
+                            href="/books/CHEM%20E/CHEM%20E%20357%20-%20Fundamentals%20of%20Heat%20and%20Mass%20Transfer%20-%207e.pdf"
+                            class="download-link"
+                            download
+                            >Download CHEM E 357 - Fundamentals of Heat and Mass
+                            Transfer - 7e</a
+                          >
+                          <a
+                            href="/books/CHEM%20E/CHEM%20E%20357%20-%20Fundamentals%20of%20Heat%20and%20Mass%20Transfer%20-%208e.pdf"
+                            class="download-link"
+                            download
+                            >Download CHEM E 357 - Fundamentals of Heat and Mass
+                            Transfer - 8e</a
+                          >
+                          <a
+                            href="/books/CHEM%20E/CHEM%20E%20381%20-%20Introduction%20to%20Chemical%20Engineering%20Thermodynamics%20-%209e.pdf"
+                            class="download-link"
+                            download
+                            >Download CHEM E 381 - Introduction to Chemical
+                            Engineering Thermodynamics - 9e</a
+                          >
+                          <a
+                            href="/books/CHEM%20E/Perry's%20Standard%20Tables%20and%20Formulae%20For%20Chemical%20Engineers.pdf"
+                            class="download-link"
+                            download
+                            >Download Perry's Standard Tables and Formulae For
+                            Chemical Engineers</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Computer Science</h2>
+                          <a
+                            href="/books/COM%20S/COMS%20311%20-%20Introudction%20to%20Algorithms%20-%204e.pdf"
+                            class="download-link"
+                            download
+                            >Download COMS 311 - Introduction to Algorithms -
+                            4e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Computer Engineering</h2>
+                          <a
+                            href="/books/CPR%20E/CPRE%20288%20-%20Practical%20Microcontroller%20Engineering.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 288 - Practical Microcontroller
+                            Engineering</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20308%20-%20Modern%20Operating%20Systems%20-%205e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 308 - Modern Operating Systems -
+                            5e</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20310%20-%20Discrete%20Mathematics%20and%20Its%20Applications%20-%208e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 310 - Discrete Mathematics and Its
+                            Applications - 8e</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20330%20-%20CMOS%20VLSI%20Design%20(Sol)%20-%204e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 330 - CMOS VLSI Design (Sol) - 4e</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20330%20-%20CMOS%20VLSI%20Design%20-%204e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 330 - CMOS VLSI Design - 4e</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20381%20-%20Computer%20Organization%20and%20Design%20-%205e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 381 - Computer Organization and
+                            Design - 5e</a
+                          >
+                          <a
+                            href="/books/CPR%20E/CPRE%20487%20-%20Efficient%20Processing%20of%20Deep%20Neural%20Networks%20-%201e.pdf"
+                            class="download-link"
+                            download
+                            >Download CPRE 487 - Efficient Processing of Deep
+                            Neural Networks - 1e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Electrical Engineering</h2>
+                          <a
+                            href="/books/E%20E/EE%20201%20-%20Electric%20Circuits%20-%2011e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 201 - Electric Circuits - 11e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20224%20-%20Signal%20Processing%20and%20Linear%20Systems%20(Sol)%20-%201e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 224 - Signal Processing and Linear
+                            Systems (Sol) - 1e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20224%20-%20Signal%20Processing%20and%20Linear%20Systems%20-%201e%20(V2).pdf"
+                            class="download-link"
+                            download
+                            >Download EE 224 - Signal Processing and Linear
+                            Systems - 1e (V2)</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20224%20-%20Signal%20Processing%20and%20Linear%20Systems%20-%201e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 224 - Signal Processing and Linear
+                            Systems - 1e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20224%20-%20Signal%20Processing%20and%20Linear%20Systems%20-%202e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 224 - Signal Processing and Linear
+                            Systems - 2e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20230%20-%20Microelectronic%20Circuits%20-%208e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 230 - Microelectronic Circuits - 8e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20311%20-%20Elements%20of%20Electromagnetics%20-%207e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 311 - Elements of Electromagnetics -
+                            7e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20311%20-%20Schaum's%20Outline%20of%20Electromagnetics%20-%204e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 311 - Schaum's Outline of
+                            Electromagnetics - 4e</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20324%20-%20Signals%20and%20Systems%20-%202e%20(Sol).pdf"
+                            class="download-link"
+                            download
+                            >Download EE 324 - Signals and Systems - 2e (Sol)</a
+                          >
+                          <a
+                            href="/books/E%20E/EE%20324%20-%20Signals%20and%20Systems%20-%202e.pdf"
+                            class="download-link"
+                            download
+                            >Download EE 324 - Signals and Systems - 2e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>English</h2>
+                          <a
+                            href="/books/ENGL/ENGL%20314%20-%20Technical%20Communication%20-%2013e.pdf"
+                            class="download-link"
+                            download
+                            >Download ENGL 314 - Technical Communication -
+                            13e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Materials Engineering</h2>
+                          <a
+                            href="/books/MAT%20E/-%20Introduction%20to%20the%20Thermodynamics%20of%20Materials%20-%206e.pdf"
+                            class="download-link"
+                            download
+                            >Download Introduction to the Thermodynamics of
+                            Materials - 6e</a
+                          >
+                          <a
+                            href="/books/MAT%20E/-%20Materials%20Science%20and%20Engineering%20An%20Introduction%20-%2010e.pdf"
+                            class="download-link"
+                            download
+                            >Download Materials Science and Engineering An
+                            Introduction - 10e</a
+                          >
+                          <a
+                            href="/books/MAT%20E/-%20Principles%20of%20Electronic%20Materials%20and%20Devices%20-%204e.pdf"
+                            class="download-link"
+                            download
+                            >Download Principles of Electronic Materials and
+                            Devices - 4e</a
+                          >
+                          <a
+                            href="/books/MAT%20E/MAT%20E%20356%20-%20Biomaterials%20-%201e.pdf"
+                            class="download-link"
+                            download
+                            >Download MAT E 356 - Biomaterials - 1e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Physics</h2>
+                          <a
+                            href="/books/PHYS/PHYS%20422%20-%20Quantum%20Computation%20and%20Quantum%20Information%20-%201e.pdf"
+                            class="download-link"
+                            download
+                            >Download PHYS 422 - Quantum Computation and Quantum
+                            Information - 1e</a
+                          >
+                        </div>
+                        <div class="subject">
+                          <h2>Psychology</h2>
+                          <a
+                            href="/books/PSYCH/PSYCH%20314%20-%20Understanding%20Motivation%20and%20Emotion%20-%207e.pdf"
+                            class="download-link"
+                            download
+                            >Download PSYCH 314 - Understanding Motivation and
+                            Emotion - 7e</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="contact-form-section">
+                  <div class="contact-form">
+                    <h2 class="title preserve-whitespace e2e-site-logo-text">Contact Me</h2>
+                    <p style="text-align: center; color: #3a5a40;">Please contact me for book requests or takedown notices.</p>
+                    <br />
+                    <form onsubmit="sendEmail(event)">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required />
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required />
+                      <label for="message">Message:</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required
+                      ></textarea>
+                      <input type="submit" value="Send" />
+                    </form>
+                  </div>
+                </section>
+              </div>
+            </main>
+          </div>
+            <footer class="site-footer" data-hover-hint="footer">
+              <div class="footer-text">
+                <p>
+                  <a href="mailto:hartsul@iastate.edu" target="_blank"
+                    >hartsul@iastate.edu</a
+                  >
+                </p>
+                <p>(952) 913-4006</p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/sullivan-hart/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </p>
+                <p>
+                  <a href="https://github.com/SullivanHart" target="_blank"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // fix for Safari's back/forward cache
+      window.onpageshow = function (e) {
+        if (e.persisted) {
+          window.location.reload();
+        }
+      };
+
+      function checkPassword() {
+        const password = document
+          .getElementById("password-input")
+          .value.toLowerCase();
+        if (password === "books") {
+          document.getElementById("password-container").style.display = "none";
+          document.getElementById("content-container").style.display = "block";
+        } else {
+          document.getElementById("error-message").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
