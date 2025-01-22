@@ -1,5 +1,5 @@
 {
-  "Chemical Engineering": [
+  "CHEM E": [
     {
       "title": "CHEM E 357 - Fundamentals of Heat and Mass Transfer (Sol) - 7e",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.357.-.Fundamentals.of.Heat.and.Mass.Transfer.Sol.-.7e.pdf"
@@ -19,15 +19,19 @@
     {
       "title": "Perry's Standard Tables and Formulae For Chemical Engineers",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/Perry.s.Standard.Tables.and.Formulae.For.Chemical.Engineers.pdf"
+    },
+    {
+      "title": "CHEM E 324 - Quantum Chemistry - 2e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.324.-.Quantum.Chemistry.-.2e.pdf"
     }
   ],
-  "Computer Science": [
+  "COM S": [
     {
       "title": "COMS 311 - Introduction to Algorithms - 4e",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/COMS.311.-.Introudction.to.Algorithms.-.4e.pdf"
     }
   ],
-  "Computer Engineering": [
+  "CPR E": [
     {
       "title": "CPRE 288 - Practical Microcontroller Engineering",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.288.-.Practical.Microcontroller.Engineering.pdf"
@@ -57,7 +61,7 @@
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.487.-.Efficient.Processing.of.Deep.Neural.Networks.-.1e.pdf"
     }
   ],
-  "Electrical Engineering": [
+  "E E": [
     {
       "title": "EE 201 - Electric Circuits - 11e",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.201.-.Electric.Circuits.-.11e.pdf"
@@ -93,6 +97,56 @@
     {
       "title": "EE 324 - Signals and Systems - 2e (Sol)",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.324.-.Signals.and.Systems.-.2e.Sol.pdf"
+    },
+    {
+      "title": "EE 332 - Semiconductor Physics and Devices - 4e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.332.-.Semiconductor.Physics.and.Devices.-.4e.pdf"
+    },
+    {
+      "title": "EE 324 - Signals and Systems - 2e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.324.-.Signals.and.Systems.-.2e.pdf"
+    }
+  ],
+  "MAT E": [
+    {
+      "title": "Introduction to the Thermodynamics of Materials - 6e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Introduction.to.the.Thermodynamics.of.Materials.-.6e.pdf"
+    },
+    {
+      "title": "Materials Science and Engineering An Introduction - 10e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Materials.Science.and.Engineering.An.Introduction.-.10e.pdf"
+    },
+    {
+      "title": "Principles of Electronic Materials and Devices - 4e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Principles.of.Electronic.Materials.and.Devices.-.4e.pdf"
+    },
+    {
+      "title": "MAT E 356 - Biomaterials - 1e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/MAT.E.356.-.Biomaterials.-.1e.pdf"
+    }
+  ],
+  "ARCH": [
+    {
+      "title": "ARCH 321 - American Urban Form",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/ARCH.321.-.American.Urban.Form.pdf"
+    }
+  ],
+  "ENGL": [
+    {
+      "title": "ENGL 314 - Technical Communication - 13e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/ENGL.314.-.Technical.Communication.-.13e.pdf"
+    }
+  ],
+  "PHYS": [
+    {
+      "title": "PHYS 422 - Quantum Computation and Quantum Information - 1e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/PHYS.422.-.Quantum.Computation.and.Quantum.Information.-.1e.pdf"
+    }
+  ],
+  "PSYCH": [
+    {
+      "title": "PSYCH 314 - Understanding Motivation and Emotion - 7e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/PSYCH.314.-.Understanding.Motivation.and.Emotion.-.7e.pdf"
     }
   ]
 }

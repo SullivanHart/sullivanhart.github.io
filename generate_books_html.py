@@ -233,6 +233,7 @@ def generate_books_html(json_file, output_file):
                 <section class="contact-form-section">
                   <div class="contact-form">
                     <h2 class="title preserve-whitespace e2e-site-logo-text">Contact Me</h2>
+                    <br />
                     <p style="text-align: center; color: #3a5a40;">Please contact me for book requests or takedown notices.</p>
                     <br />
                     <form onsubmit="sendEmail(event)">
