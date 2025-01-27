@@ -605,10 +605,6 @@ html:before {
   display: none;
 }
 
-.preserve-whitespace {
-  white-space: pre-wrap;
-}
-
 .preserve-whitespace--nowrap {
   white-space: pre;
 }

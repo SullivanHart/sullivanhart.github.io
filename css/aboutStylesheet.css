@@ -130,6 +130,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-align: center; /* Center the h1 text */
 }
 
 /**
@@ -605,10 +606,6 @@ html:before {
   display: none;
 }
 
-.preserve-whitespace {
-  white-space: pre-wrap;
-}
-
 .preserve-whitespace--nowrap {
   white-space: pre;
 }
@@ -945,27 +942,20 @@ nav .link-title:last-child {
 
 .logo-wrap {
   flex: 1;
-}
-
-.logo-wrap {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
   padding-top: 0px;
   width: 50%;
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center the logo wrap */
 }
 
 .logo-text {
-  float: right;
-  text-align: right;
-}
-
-.logo-image {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  float: none; /* Remove float */
+  text-align: center; /* Center the logo text */
+  margin: 0 auto; /* Center the logo text */
 }
 
 .logo-secondary-text {
