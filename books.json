@@ -1,4 +1,10 @@
 {
+  "CHEM": [
+    {
+      "title": "CHEM 324 - Quantum Chemistry - 2e",
+      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.324.-.Quantum.Chemistry.-.2e.pdf"
+    }
+  ],
   "CHEM E": [
     {
       "title": "CHEM E 357 - Fundamentals of Heat and Mass Transfer (Sol) - 7e",
@@ -19,10 +25,6 @@
     {
       "title": "Perry's Standard Tables and Formulae For Chemical Engineers",
       "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/Perry.s.Standard.Tables.and.Formulae.For.Chemical.Engineers.pdf"
-    },
-    {
-      "title": "CHEM E 324 - Quantum Chemistry - 2e",
-      "url": "https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.324.-.Quantum.Chemistry.-.2e.pdf"
     }
   ],
   "COM S": [
