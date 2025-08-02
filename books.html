@@ -1,31 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Books</title>
+    <title>Books Archive</title>
     <link rel="stylesheet" href="/css/aboutStylesheet.css" type="text/css" />
     <style>
-      .download-link {
-        display: inline-block;
-        margin: 10px 0;
-        padding: 10px 20px;
-        background-color: #757d5f; /* Match color of project containers */
-        color: #e0dcc5; /* Match text color of project containers */
-        text-decoration: none;
-        border-radius: 4px;
-        transition: background-color 0.3s, color 0.3s;
-        width: 100%;
-        text-align: center;
-      }
-      .download-link:hover {
-        background-color: #e0dcc5; /* Match hover color of project containers */
-        color: #757d5f; /* Match text color on hover */
-      }
-      .subject h2 {
-        color: #3a5a40; /* Dark green color for subject titles */
-      }
-      .contact-form,
       #password-container {
         margin: 20px auto;
         max-width: 600px;
@@ -34,28 +13,24 @@
         border-radius: 8px;
         color: #3a5a40; /* Match text color */
       }
-      .contact-form h2,
       #password-container h2 {
         color: #3a5a40; /* Match header color */
         text-align: center;
         margin: 0; /* Remove outline around header */
       }
-      .contact-form label,
-      .contact-form input,
-      .contact-form textarea,
       #password-container input,
       #password-container button {
         display: block;
         width: 100%;
         padding: 10px;
+        margin-top: 10px;
         margin-bottom: 10px;
         border: 1px solid #757d5f; /* Match border color */
         border-radius: 4px;
         color: #3a5a40; /* Match text color */
         outline: none; /* Remove outline */
       }
-      #password-container label,
-      .contact-form label {
+      #password-container label {
         display: block;
         width: 100%;
         padding-top: 10px;
@@ -65,7 +40,6 @@
         outline: none; /* Remove outline */
         border: none; /* Ensure no border */
       }
-      .contact-form input[type="submit"],
       #password-container button {
         background-color: #757d5f; /* Match button color */
         color: #e0dcc5; /* Match button text color */
@@ -73,17 +47,8 @@
         cursor: pointer;
         transition: background-color 0.3s;
       }
-      .contact-form input[type="submit"]:hover,
       #password-container button:hover {
         background-color: #3a5a40; /* Match button hover color */
-      }
-      .page-header .title {
-        text-align: center;
-      }
-      .download-link-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
       }
     </style>
     <script
@@ -92,584 +57,44 @@
       async
       onload="try { window.Typekit.load(); } catch (e) { console.warn('Typekit not loaded.'); }"
     ></script>
-    <script>
-      function sendEmail(event) {
-        event.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        window.location.href = `mailto:sullivan.hart7@gmail.com?subject=Contact from ${name}&body=Email: ${email}%0D%0A%0D%0A${message}`;
-      }
-    </script>
   </head>
-  <body class="transition-enabled">
+  <body>
     <div id="password-container">
-      <h2>Enter Password</h2>
-      <label for="password-input">Password:</label>
-      <input type="password" id="password-input" />
-      <button onclick="checkPassword()">Submit</button>
+      <h2>Enter Password to View Books</h2>
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="unlock()">Unlock</button>
       <p id="error-message" style="color: red; display: none">
         Incorrect password. Please try again.
       </p>
     </div>
-    <div id="content-container" style="display: none">
-      <div class="site-wrap cfix">
-        <div class="site-container">
-          <div class="site-content e2e-site-content">
-            <header
-              class="site-header js-site-header"
-              data-context="theme.nav"
-              data-hover-hint="nav"
-              data-hover-hint-placement="top-start"
-            >
-              <nav
-                class="nav-container"
-                data-hover-hint="nav"
-                data-hover-hint-placement="bottom-start"
-              >
-                <div class="page-title">
-                  <a href="/">MAIN</a>
-                </div>
-                <div class="page-title">
-                  <a href="/images/Resume/Resume.pdf" target="_blank">RESUME</a>
-                </div>
-                <div class="page-title">
-                  <a href="/about.html">ABOUT ME</a>
-                </div>
-                <div class="page-title">
-                  <a href="/previous-experience.html">PREVIOUS EXPERIENCE</a>
-                </div>
-                <div class="page-title">
-                  <a href="/classes.html">CLASSES</a>
-                </div>
-                <div class="gallery-title">
-                  <a href="/projects.html">PROJECTS</a>
-                </div>
-                <div class="page-title">
-                  <a href="/mandatory.html">CPRE 494</a>
-                </div>
-              </nav>
-              <div
-                class="logo-wrap"
-                data-context="theme.logo.header"
-                data-hover-hint="logo"
-                data-hover-hint-placement="bottom-start"
-              >
-                <div class="logo e2e-site-logo-text logo-text">
-                  <a href="/" class="preserve-whitespace">SULLIVAN HART</a>
-                </div>
-              </div>
-              <a href="/nav.html">
-                <div class="hamburger-click-area js-hamburger">
-                  <div class="hamburger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                  </div>
-                </div>
-              </a>
-            </header>
-            <main>
-              <div
-                class="page-container js-site-wrap"
-                data-context="page.page.container"
-                data-hover-hint="pageContainer"
-              >
-                <section class="page standard-modules">
-                  <header
-                    class="page-header content"
-                    data-context="pages"
-                    data-identity="id:p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
-                    data-hover-hint="pageHeader"
-                    data-hover-hint-id="p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
-                  >
-                    <h1 class="title preserve-whitespace e2e-site-logo-text">
-                      Books
-                    </h1>
-                  </header>
-                  <div
-                    class="page-content js-page-content"
-                    data-context="pages"
-                    data-identity="id:p656e077c9ccd095a66ee1ec852067cf2a442d8d82c49b88fd4f70"
-                  >
-                    <div
-                      id="project-canvas"
-                      class="js-project-modules modules content"
-                    >
-                      <div id="books-container">
-    
-                        <div class="subject">
-                          <h2>CHEM</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.324.-.Quantum.Chemistry.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM 324 - Quantum Chemistry - 2e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.324.-.Quantum.Chemistry.Sol.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM 324 - Quantum Chemistry (Sol) - 2e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>CHEM E</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.357.-.Fundamentals.of.Heat.and.Mass.Transfer.Sol.-.7e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM E 357 - Fundamentals of Heat and Mass Transfer (Sol) - 7e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.357.-.Fundamentals.of.Heat.and.Mass.Transfer.-.7e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM E 357 - Fundamentals of Heat and Mass Transfer - 7e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.357.-.Fundamentals.of.Heat.and.Mass.Transfer.-.8e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM E 357 - Fundamentals of Heat and Mass Transfer - 8e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.381.-.Introduction.to.Chemical.Engineering.Thermodynamics.-.9e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM E 381 - Introduction to Chemical Engineering Thermodynamics - 9e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/Perry.s.Standard.Tables.and.Formulae.For.Chemical.Engineers.pdf"
-                              class="download-link"
-                              download
-                              >Download Perry's Standard Tables and Formulae For Chemical Engineers</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CHEM.E.415.-.Bioprocess.Engineering.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download CHEM E 415 - Bioprocess Engineering - 2e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>COM S</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/COMS.311.-.Introudction.to.Algorithms.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download COMS 311 - Introduction to Algorithms - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/COMS.417.-.Introudction.to.Software.Testing.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download COMS 417 - Introudction to Software Testing - 2e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>CPR E</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.288.-.Practical.Microcontroller.Engineering.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 288 - Practical Microcontroller Engineering</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.308.-.Modern.Operating.Systems.-.5e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 308 - Modern Operating Systems - 5e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.310.-.Discrete.Mathematics.and.Its.Applications.-.8e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 310 - Discrete Mathematics and Its Applications - 8e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.330.-.CMOS.VLSI.Design.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 330 - CMOS VLSI Design - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.330.-.CMOS.VLSI.Design.Sol.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 330 - CMOS VLSI Design (Sol) - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.381.-.Computer.Organization.and.Design.-.5e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 381 - Computer Organization and Design - 5e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/CPRE.487.-.Efficient.Processing.of.Deep.Neural.Networks.-.1e.pdf"
-                              class="download-link"
-                              download
-                              >Download CPRE 487 - Efficient Processing of Deep Neural Networks - 1e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>E E</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.201.-.Electric.Circuits.-.11e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 201 - Electric Circuits - 11e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.224.-.Signal.Processing.and.Linear.Systems.Sol.-.1e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 224 - Signal Processing and Linear Systems (Sol) - 1e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.224.-.Signal.Processing.and.Linear.Systems.-.1e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 224 - Signal Processing and Linear Systems - 1e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.0/EE.224.-.Signal.Processing.and.Linear.Systems.-.1e.V2.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 224 - Signal Processing and Linear Systems - 1e (V2)</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.224.-.Signal.Processing.and.Linear.Systems.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 224 - Signal Processing and Linear Systems - 2e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.230.-.Microelectronic.Circuits.-.8e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 230 - Microelectronic Circuits - 8e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.311.-.Elements.of.Electromagnetics.-.7e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 311 - Elements of Electromagnetics - 7e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.311.-.Schaum.s.Outline.of.Electromagnetics.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 311 - Schaum's Outline of Electromagnetics - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.324.-.Signals.and.Systems.-.2e.Sol.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 324 - Signals and Systems - 2e (Sol)</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.332.-.Semiconductor.Physics.and.Devices.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 332 - Semiconductor Physics and Devices - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/EE.324.-.Signals.and.Systems.-.2e.pdf"
-                              class="download-link"
-                              download
-                              >Download EE 324 - Signals and Systems - 2e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>MAT E</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Introduction.to.the.Thermodynamics.of.Materials.-.6e.pdf"
-                              class="download-link"
-                              download
-                              >Download MAT E 311 - Introduction to the Thermodynamics of Materials - 6e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Materials.Science.and.Engineering.An.Introduction.-.10e.pdf"
-                              class="download-link"
-                              download
-                              >Download MAT E 215 - Materials Science and Engineering An Introduction - 10e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/-.Principles.of.Electronic.Materials.and.Devices.-.4e.pdf"
-                              class="download-link"
-                              download
-                              >Download MAT E 317 - Principles of Electronic Materials and Devices - 4e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/MAT.E.356.-.Biomaterials.-.1e.pdf"
-                              class="download-link"
-                              download
-                              >Download MAT E 356 - Biomaterials - 1e</a
-                            >
-                          </div>
-            
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/MAT.E.319.-.Statics.and.Materials.of.Mechanics.-.5e.pdf"
-                              class="download-link"
-                              download
-                              >Download MAT E 319 - Statics and Materials of Mechanics - 5e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>ARCH</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/ARCH.321.-.American.Urban.Form.pdf"
-                              class="download-link"
-                              download
-                              >Download ARCH 321 - American Urban Form</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>ENGL</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/ENGL.314.-.Technical.Communication.-.13e.pdf"
-                              class="download-link"
-                              download
-                              >Download ENGL 314 - Technical Communication - 13e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>PHYS</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/PHYS.422.-.Quantum.Computation.and.Quantum.Information.-.1e.pdf"
-                              class="download-link"
-                              download
-                              >Download PHYS 422 - Quantum Computation and Quantum Information - 1e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>PSYCH</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/PSYCH.314.-.Understanding.Motivation.and.Emotion.-.7e.pdf"
-                              class="download-link"
-                              download
-                              >Download PSYCH 314 - Understanding Motivation and Emotion - 7e</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                        <div class="subject">
-                          <h2>MISC</h2>
-        
-                          <div class="download-link-container">
-                            <a
-                              href="https://github.com/SullivanHart/sullivanhart.github.io/releases/download/v1.1/Television.and.American.Culture.pdf"
-                              class="download-link"
-                              download
-                              >Download Television and American Culture</a
-                            >
-                          </div>
-            
-                        </div>
-        
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="contact-form-section">
-                  <div class="contact-form">
-                    <h2 class="title preserve-whitespace e2e-site-logo-text">Contact Me</h2>
-                    <br />
-                    <p style="text-align: center; color: #3a5a40;">Please contact me for book requests or takedown notices.</p>
-                    <br />
-                    <form onsubmit="sendEmail(event)">
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="name" required />
-                      <label for="email">Email:</label>
-                      <input type="email" id="email" name="email" required />
-                      <label for="message">Message:</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        required
-                      ></textarea>
-                      <input type="submit" value="Send" />
-                    </form>
-                  </div>
-                </section>
-              </div>
-            </main>
-          </div>
-            <footer class="site-footer" data-hover-hint="footer">
-              <div class="footer-text">
-                <p>
-                  <a href="mailto:hartsul@iastate.edu" target="_blank"
-                    >hartsul@iastate.edu</a
-                  >
-                </p>
-                <p>(952) 913-4006</p>
-                <p>
-                  <a
-                    href="https://www.linkedin.com/in/sullivan-hart/"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </p>
-                <p>
-                  <a href="https://github.com/SullivanHart" target="_blank"
-                    >GitHub</a
-                  >
-                </p>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      // fix for Safari's back/forward cache
-      window.onpageshow = function (e) {
-        if (e.persisted) {
-          window.location.reload();
-        }
-      };
 
-      function checkPassword() {
-        const password = document
-          .getElementById("password-input")
-          .value.toLowerCase();
-        if (password === "books") {
+    <div id="content" style="display: none"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+    <script src="books_secret.enc.js"></script>
+    <script>
+      async function unlock() {
+        const pass = document.getElementById("password").value;
+        const decrypted = decryptAES(encryptedHTML, pass);
+
+        if (decrypted.startsWith("<")) {
           document.getElementById("password-container").style.display = "none";
-          document.getElementById("content-container").style.display = "block";
+          const content = document.getElementById("content");
+          content.style.display = "block";
+          content.innerHTML = decrypted;
         } else {
           document.getElementById("error-message").style.display = "block";
+        }
+      }
+
+      function decryptAES(encryptedBase64, passphrase) {
+        try {
+          const bytes = CryptoJS.AES.decrypt(encryptedBase64, passphrase);
+          return bytes.toString(CryptoJS.enc.Utf8);
+        } catch (e) {
+          return "";
         }
       }
     </script>
   </body>
 </html>
-    
