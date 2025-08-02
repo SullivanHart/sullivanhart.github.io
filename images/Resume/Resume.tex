@@ -1,0 +1,315 @@
+%-------------------------
+% Resume in LateX
+% Author : Sullivan Hart
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Set font
+% \renewcommand{\familydefault}{lmr}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\dualsection}[2]{
+  \vspace{10pt}
+  \noindent
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    \textsc{\large #1} & \textsc{\large #2} \\
+  \end{tabular*}
+  \color{black}\titlerule
+  \vspace{-5pt}
+}
+
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingTightListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{.6em}}
+\newcommand{\resumeSubHeadingTightListEnd}{\end{itemize}}
+
+\newcommand{\datesmall}[1]{\textit{\small{#1}}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Sullivan Hart} & Email: \href{mailto:hartsul@iastate.edu}{hartsul@iastate.edu}\\
+  \href{https://sullivanhart.github.io/}{sullivanhart.github.io} & Phone: \href{tel:+19529134006}{(952) 913-4006} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iowa State University}{Ames, IA}
+      {Bachelor of Science in Computer Engineering; GPA: 3.74/4.00}{Aug. 2022 -- Dec. 2025}
+    \resumeSubSubheading
+      {Master of Science in Computer Engineering}{Aug. 2025 -- Dec. 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Garmin}{Salem, OR \& Olathe, KS}
+    %   {Design Engineering Intern - FPGA Team}{Summer 2025}
+    %   \resumeItemListStart
+    %     \resumeItem{GNSS Channelizer}
+    %     %   {Developing a polyphase IIR-based GNSS channelizer in VHDL, including filter design, hardware modeling in Python, and custom simulations. Responsible for the entire design cycle -- research, prototyping, implementation, and verification.}
+    %       {Developed a a filter in VHDL, including filter design, hardware modeling in Python, and custom simulations. Responsible for the entire design cycle -- research, prototyping, implementation, and verification.}
+    %     \resumeItem{Digital Signal Processing}
+    %     %   {Applied principles of multirate DSP and polyphase decomposition to improve resource utlizaton on a Multi-Frequency GNSS Receiver's FPGA.}
+    %       {Applied principles of multirate DSP to improve resource utlizaton on an FPGA.}
+    %   \resumeItemListEnd
+
+    % \resumeSubSubheading
+    %   {Software Engineer Intern - NAV Team}{Summer 2024}
+    %   \resumeItemListStart
+    %     \resumeItem{Aviation Navigation Software}
+    %     %   {Implemented features and fixes including low-level GPS sensor data processing, user interface improvements, and high-level navigation logic and turn prediction.}
+    %       {Implemented features and fixes including low-level GPS sensor data processing, user interface improvements, and high-level navigation logic.}
+    %     \resumeItem{Turn Behavior Improvements}
+    %       {Developed logic to dynamically size turns based on aircraft speed and pilot behvior; addressed customer concerns of illogical turn sizes.}
+    %     %   {Developed logic to dynamically adjust route based on a variety of factors; new functionality addressed customer concerns.}
+    %     \resumeItem{NAV Speed Debugger}
+    %     %   {Built an internal tool on G3000 PRIME to debug NAV route generation issues and visualize flight path data; decreased investigation time by visualizing HSDB data on a developer-only page of the flight deck.}
+    %       {Built an internal tool to debug route generation issues and visualize flight path data; decreased investigation time by visualizing data in a convenient way.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {Garmin}{Salem, OR}
+      {Design Engineering Intern -- FPGA Team}{Summer 2025}
+      \resumeItemListStart
+        \resumeItem{VHDL Channelizer}
+          % {Developing a polyphase IIR-based GNSS channelizer in VHDL, including filter design, hardware modeling in Python, and custom simulations. Responsible for the entire design cycle -- research, prototyping, implementation, and verification.}
+          {Developed a filter in VHDL, including filter design, hardware modeling in Python, and custom simulations. Responsible for the entire design cycle -- research, prototyping, implementation, and verification.}
+        \resumeItem{Digital Signal Processing}
+          % {Applied principles of multirate DSP and polyphase decomposition to improve resource utlizaton on a Multi-Frequency GNSS Receiver's FPGA.}
+          {Applied principles of multirate DSP to improve resource utlizaton on an FPGA.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Garmin}{Olathe, KS}
+      {Software Engineer Intern -- NAV Team}{Summer 2024}
+      \resumeItemListStart
+        \resumeItem{Aviation Navigation Software}
+          % {Implemented features and fixes including low-level GPS sensor data processing, user interface improvements, and high-level navigation logic and turn prediction.}
+          {Implemented features and fixes including low-level GPS sensor data processing, user interface improvements, and high-level navigation logic.}
+        \resumeItem{Turn Behavior Improvements}
+          % {Developed logic to dynamically size turns based on aircraft speed and pilot behvior; addressed customer concerns of illogical turn sizes.}
+          {Developed logic to dynamically adjust route based on a variety of factors; new functionality addressed customer concerns.}
+        \resumeItem{NAV Speed Debugger}
+          % {Built an internal tool on G3000 PRIME to debug NAV route generation issues and visualize flight path data; decreased investigation time by visualizing HSDB data on a developer-only page of the flight deck.}
+          {Built an internal tool to debug route generation issues and visualize flight path data; decreased investigation time by visualizing data in a convenient way.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Iowa State University}{Ames, IA}
+        {Operating Systems Teaching Assistant}{Jan. 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{Lab Instruction}
+            {Independently led two 15+ student lab sections each week, instructing students on topics such as CPU scheduling, file systems, and multithreading. Guided students through hands-on implementations in Linux using \texttt{pthreads}, \texttt{fork()}, \texttt{exec()}, and other key system calls. All development was done in C.}
+            \resumeItem{Course Support \& Evaluation}
+            {Graded students' programming projects (e.g., multithreaded bank server, from-scratch shell), weekly lab code/reports, and midterm/final exams. Delivered supplementary instruction on topics such as CPU architecture, virtual memory, page replacement algorithms, and process synchronization.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Walton's Grizzly Lodge}{Portola, CA}
+      {Camp Counselor}{Summer 2023}
+    
+    \resumeSubheading
+      {Kerfoot Canopy Tours}{Belle Plaine, MN}
+      {Zipline Guide}{Summers 2022 \& 2023}
+
+    \resumeSubheading
+      {Camp Phillippo}{Cannon Falls, MN}
+      {Camp Counselor}{Summers 2019-2021}
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    % \resumeSubItem{Garmin - GNSS Channelizer}
+    %   {Implemented a 64-path polyphase IIR channelizer in VHDL to filter GNSS signals for effecient processing on FPGA hardware. Designed and tested DSP components, with prototype modeling and verification in Python. By using a polyphase IIR filterbank, space was able to be saved while output was still compatible with the existing anti-spoofing filter.}
+
+    % \resumeSubItem{Garmin - NAV Route Generation}
+    %   {Developed a feature for aviation display routing software -- dynamic turn sizing based on real-time speed. Built a developer-only page on G3000 Prime to aid debugging and streamline navigation logic testing.}
+
+    \resumeSubItem{Automated Parking System (Senior Design)}
+    {Led hardware and ML development for a CV-based parking monitor. Deployed YOLOv8 via Docker on Raspberry Pi with multiple ESP32-CAMs for real-time vehicle detection. Designed and soldered custom electronics, built an image processing pipeline and database. Delivered a modular, robust, and documented system.}
+
+    \resumeSubItem{Riff Radar (Concert App)}
+    {Led frontend dev for an Android app that simplifies concert discovery. Integrated Spotify, Ticketmaster, and Stripe APIs for artist previews and ticketing. Built a real-time chat system for artist-venue coordination. Displayed Ticketmaster and user-created events side-by-side, removing the barrier of entry to concert hosting.}
+
+    {\resumeSubItem{4-Mode Digital Potentiometer and Amplifier IC}
+    {Designed a CMOS IC with four modes: non-inverting amplifier, inverting amplifier, digital potentiometer, and 4-bit DAC. Supported 16 steps using a 4-bit control signal. Implemented a resistor ladder with transmission gates and decoder logic. Created schematic and layout in Cadence Virtuoso; passed DRC and LVS.}}
+
+    % \resumeSubItem{H2Glow}
+    %   {Designed a Chem-E-Car luminosity detection system using an LDR and microcontroller to read a chemical reaction endpoint. Emphasized reproducibility and robust light isolation for competition use.}
+
+    % \resumeSubItem{Multi-threaded Banking Service}
+    %   {Built a multithreaded bank server in C for Linux using \texttt{pthreads} and \texttt{mutexes}. Managed synchronized access to shared account data with support for concurrent client commands and deadlock avoidance.}
+
+    % \resumeSubItem{Quantum Computing Final Essay}
+    %   {Wrote a comparative analysis of classical vs. quantum decryption strategies, including implementation and benchmarking of Shor’s algorithm using Qiskit. Explored RSA vulnerabilities in a post-quantum context.}
+
+    % \resumeSubItem{MIPS Processor}
+    %   {Designed a five-stage pipelined MIPS processor in VHDL with hazard detection, forwarding logic, and support for arithmetic and memory operations. Verified using VHDL testbenches and assembly scripts like Bubble Sort.}
+
+    % \resumeSubItem{Bomb-finding Robot}
+    %   {Built a line-following autonomous robot with IR sensors and a microphone to detect and navigate toward a “bomb”. Programmed navigation and reaction logic on an embedded microcontroller.}
+
+    % \resumeSubItem{Solar-powered Charging Station}
+    %   {Led a team that is devloping and implementing a portable solar charging unit for phones and small devices.}
+
+  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+%\section{Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%
+%--------Activities------------
+% 
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+
+\parbox[t]{0.53\textwidth}{
+\vspace{-3pt}
+\section*{Activities}
+\resumeSubHeadingTightListStart
+  \item{
+    \textbf{Chem-E Car}\hfill\datesmall{Fall 2024 -- Present}\\
+    \textit{Electronics Team Lead}
+  }
+  \item{
+    \textbf{Engineers for a Sustainable World}\hfill\datesmall{Fall 2022 -- Present}\\
+    \textit{Solar Team Lead}
+  }
+  \item{
+    \textbf{Birding Club}\hfill\datesmall{Fall 2022 -- Present}
+  }
+  \item{
+    \textbf{Mountaineering \& Climbing Club}\hfill\datesmall{Fall 2022 -- Present}
+  }
+\resumeSubHeadingTightListEnd
+}
+
+&
+
+\parbox[t]{0.43\textwidth}{
+\vspace{-3pt}
+\section*{Other}
+\resumeSubHeadingTightListStart
+    \resumeSubItem{Skills}{Embedded Systems, Digital Design (VHDL),\\ C, Java, Python, Linux, Docker, Git}
+    \resumeSubItem{Interests}{Rock Climbing, Mountain Biking, Tennis, Quilting, Classic Motorcycles}
+    \resumeSubItem{Awards}{
+        \\ISU Dean's List\hfill\datesmall{All Semesters}
+        \\2\textsuperscript{nd} Place -- Chem-E-Car Conference\hfill\datesmall{Spring, 2025}
+        \\Best Coder -- COM S 309\hfill\datesmall{Spring, 2024}
+        \\3\textsuperscript{rd} Grade Bus Rider of the Month\hfill\datesmall{March, 2013}
+        \\
+        }
+\resumeSubHeadingTightListEnd
+}
+
+\end{tabular*}
+
+%-------------------------------------------
+\end{document}
+
+%% Skills
+%% Personal Interests
+%% Awards

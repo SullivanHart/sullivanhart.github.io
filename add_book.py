@@ -40,10 +40,34 @@ def git_commit_and_push():
     subprocess.run(['git', 'commit', '-m', 'Add new book'], check=True)
     subprocess.run(['git', 'push'], check=True)
 
+def encrypt_html():
+    file_path = "encrypt_books.js"
+
+    try:
+        result = subprocess.run(
+            ["node", file_path],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+
+        print("Node.js script output:")
+        print(result.stdout)
+
+        if result.stderr:
+            print("Node.js script errors:")
+            print(result.stderr)
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error running Node.js script: {e}")
+        print(f"Stderr: {e.stderr}")
+    except FileNotFoundError:
+        print("Error: 'node' command not found. Make sure Node.js is installed and in your system's PATH.")
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python add_book.py <subject> <file_path>")
-        sys.exit(1)
+        exit()
 
     subject = sys.argv[1]
     file_path = sys.argv[2]
@@ -56,4 +80,5 @@ if __name__ == "__main__":
     url = upload_book(file_path)
     add_book_to_json(subject, title, url, 'books.json')
     regenerate_html()
+    encrypt_html()
     git_commit_and_push()

@@ -31,8 +31,7 @@ def generate_books_html(json_file, output_file):
       .subject h2 {
         color: #3a5a40; /* Dark green color for subject titles */
       }
-      .contact-form,
-      #password-container {
+      .contact-form {
         margin: 20px auto;
         max-width: 600px;
         padding: 20px;
@@ -40,17 +39,14 @@ def generate_books_html(json_file, output_file):
         border-radius: 8px;
         color: #3a5a40; /* Match text color */
       }
-      .contact-form h2,
-      #password-container h2 {
+      .contact-form h2 {
         color: #3a5a40; /* Match header color */
         text-align: center;
         margin: 0; /* Remove outline around header */
       }
       .contact-form label,
       .contact-form input,
-      .contact-form textarea,
-      #password-container input,
-      #password-container button {
+      .contact-form textarea {
         display: block;
         width: 100%;
         padding: 10px;
@@ -60,7 +56,6 @@ def generate_books_html(json_file, output_file):
         color: #3a5a40; /* Match text color */
         outline: none; /* Remove outline */
       }
-      #password-container label,
       .contact-form label {
         display: block;
         width: 100%;
@@ -71,16 +66,14 @@ def generate_books_html(json_file, output_file):
         outline: none; /* Remove outline */
         border: none; /* Ensure no border */
       }
-      .contact-form input[type="submit"],
-      #password-container button {
+      .contact-form input[type="submit"] {
         background-color: #757d5f; /* Match button color */
         color: #e0dcc5; /* Match button text color */
         border: none;
         cursor: pointer;
         transition: background-color 0.3s;
       }
-      .contact-form input[type="submit"]:hover,
-      #password-container button:hover {
+      .contact-form input[type="submit"]:hover {
         background-color: #3a5a40; /* Match button hover color */
       }
       .page-header .title {
@@ -109,16 +102,7 @@ def generate_books_html(json_file, output_file):
     </script>
   </head>
   <body class="transition-enabled">
-    <div id="password-container">
-      <h2>Enter Password</h2>
-      <label for="password-input">Password:</label>
-      <input type="password" id="password-input" />
-      <button onclick="checkPassword()">Submit</button>
-      <p id="error-message" style="color: red; display: none">
-        Incorrect password. Please try again.
-      </p>
-    </div>
-    <div id="content-container" style="display: none">
+    <div id="content-container" style="display: block">
       <div class="site-wrap cfix">
         <div class="site-container">
           <div class="site-content e2e-site-content">
@@ -288,18 +272,6 @@ def generate_books_html(json_file, output_file):
           window.location.reload();
         }
       };
-
-      function checkPassword() {
-        const password = document
-          .getElementById("password-input")
-          .value.toLowerCase();
-        if (password === "books") {
-          document.getElementById("password-container").style.display = "none";
-          document.getElementById("content-container").style.display = "block";
-        } else {
-          document.getElementById("error-message").style.display = "block";
-        }
-      }
     </script>
   </body>
 </html>
@@ -309,4 +281,4 @@ def generate_books_html(json_file, output_file):
         f.write(html_content)
 
 if __name__ == "__main__":
-    generate_books_html('books.json', 'books.html')
+    generate_books_html('books.json', 'books_content.html')
