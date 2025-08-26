@@ -36,7 +36,7 @@ def regenerate_html():
     subprocess.run(['python', 'generate_books_html.py'], check=True)
 
 def git_commit_and_push():
-    subprocess.run(['git', 'add', 'books.json', 'books.html'], check=True)
+    subprocess.run(['git', 'add', 'books.json', 'books_content.html', 'books_secret.enc.js'], check=True)
     subprocess.run(['git', 'commit', '-m', 'Add new book'], check=True)
     subprocess.run(['git', 'push'], check=True)
 
