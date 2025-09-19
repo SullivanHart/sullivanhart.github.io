@@ -101,6 +101,17 @@ def generate_books_html(json_file, output_file):
       }
     </script>
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G31PHCDPHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G31PHCDPHK');
+  </script>
+  
   <body class="transition-enabled">
     <div id="content-container" style="display: block">
       <div class="site-wrap cfix">

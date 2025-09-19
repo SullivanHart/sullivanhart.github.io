@@ -58,6 +58,22 @@
       onload="try { window.Typekit.load(); } catch (e) { console.warn('Typekit not loaded.'); }"
     ></script>
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-G31PHCDPHK"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-G31PHCDPHK");
+  </script>
+
   <body>
     <div id="password-container">
       <h2>Enter Password to View Books</h2>

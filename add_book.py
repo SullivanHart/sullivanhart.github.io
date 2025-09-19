@@ -65,20 +65,27 @@ def encrypt_html():
         print("Error: 'node' command not found. Make sure Node.js is installed and in your system's PATH.")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python add_book.py <subject> <file_path>")
-        exit()
+    # do everything
+    if False:
+        if len(sys.argv) != 3:
+            print("Usage: python add_book.py <subject> <file_path>")
+            exit()
 
-    subject = sys.argv[1]
-    file_path = sys.argv[2]
-    title = os.path.basename(file_path).replace('.', ' ').replace(' pdf', '')
+        subject = sys.argv[1]
+        file_path = sys.argv[2]
+        title = os.path.basename(file_path).replace('.', ' ').replace(' pdf', '')
 
-    if not os.path.isfile(file_path):
-        print(f"File not found: {file_path}")
-        sys.exit(1)
+        if not os.path.isfile(file_path):
+            print(f"File not found: {file_path}")
+            sys.exit(1)
 
-    url = upload_book(file_path)
-    add_book_to_json(subject, title, url, 'books.json')
-    regenerate_html()
-    encrypt_html()
-    git_commit_and_push()
+        url = upload_book(file_path)
+        add_book_to_json(subject, title, url, 'books.json')
+        regenerate_html()
+        encrypt_html()
+        git_commit_and_push()
+
+    # just create the content
+    else:
+        regenerate_html()
+        encrypt_html()
