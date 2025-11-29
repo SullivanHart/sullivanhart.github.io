@@ -66,7 +66,7 @@ def encrypt_html():
 
 if __name__ == "__main__":
     # do everything
-    if False:
+    if True:
         if len(sys.argv) != 3:
             print("Usage: python add_book.py <subject> <file_path>")
             exit()

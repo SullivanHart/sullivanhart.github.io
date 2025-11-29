@@ -84,6 +84,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingTwo}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -120,17 +129,19 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingTwo
       {Iowa State University}{Ames, IA}
-      {Bachelor of Science in Computer Engineering; GPA: 3.74/4.00}{Aug. 2022 -- Dec. 2025}
-    \resumeSubSubheading
       {Master of Science in Computer Engineering}{Aug. 2025 -- Dec. 2026}
+      {Bachelor of Science in Computer Engineering; GPA: 3.74/4.00}{Aug. 2022 -- Dec. 2025}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+      \resumeSubheading
+      {IBM}{Rochester, MN}
+      {Hardware Developer Intern -- Quantum Team}{Summer 2026}
 
     % \resumeSubheading
     %   {Garmin}{Salem, OR \& Olathe, KS}
@@ -167,7 +178,7 @@
           {Developed a filter in VHDL, including filter design, hardware modeling in Python, and custom simulations. Responsible for the entire design cycle -- research, prototyping, implementation, and verification.}
         \resumeItem{Digital Signal Processing}
           % {Applied principles of multirate DSP and polyphase decomposition to improve resource utlizaton on a Multi-Frequency GNSS Receiver's FPGA.}
-          {Applied principles of multirate DSP to improve resource utlizaton on an FPGA.}
+          {Applied principles of multirate DSP to improve resource utilization on an FPGA.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -187,12 +198,12 @@
 
     \resumeSubheading
         {Iowa State University}{Ames, IA}
-        {Operating Systems Teaching Assistant}{Jan. 2025 -- Present}
+        {Operating Systems Teaching Assistant}{Jan. 2025 -- May 2025}
         \resumeItemListStart
             \resumeItem{Lab Instruction}
-            {Independently led two 15+ student lab sections each week, instructing students on topics such as CPU scheduling, file systems, and multithreading. Guided students through hands-on implementations in Linux using \texttt{pthreads}, \texttt{fork()}, \texttt{exec()}, and other key system calls. All development was done in C.}
+            {Independently led 40+ students across 2 lab sections weekly. Instructed students on topics such as CPU scheduling, file systems, and multithreading. Guided students through hands-on implementations in Linux using \texttt{pthreads}, \texttt{fork()}, \texttt{exec()}, and other key system calls. All development was done in C.}
             \resumeItem{Course Support \& Evaluation}
-            {Graded students' programming projects (e.g., multithreaded bank server, from-scratch shell), weekly lab code/reports, and midterm/final exams. Delivered supplementary instruction on topics such as CPU architecture, virtual memory, page replacement algorithms, and process synchronization.}
+            {Graded students' programming projects, weekly lab reports, and exams. Delivered supplementary instruction on topics such as CPU architecture, virtual memory, and multithreading.}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -220,7 +231,7 @@
     %   {Developed a feature for aviation display routing software -- dynamic turn sizing based on real-time speed. Built a developer-only page on G3000 Prime to aid debugging and streamline navigation logic testing.}
 
     \resumeSubItem{Automated Parking System (Senior Design)}
-    {Led hardware and ML development for a CV-based parking monitor. Deployed YOLOv8 via Docker on Raspberry Pi with multiple ESP32-CAMs for real-time vehicle detection. Designed and soldered custom electronics, built an image processing pipeline and database. Delivered a modular, robust, and documented system.}
+    {Leading hardware and ML development for a CV-based parking monitor. Deployed YOLOv8 via Docker on Raspberry Pi with multiple cameras for real-time vehicle detection. Designed and soldered custom electronics, built an image processing pipeline and database. Developing a modular, robust, and documented system.}
 
     \resumeSubItem{Riff Radar (Concert App)}
     {Led frontend dev for an Android app that simplifies concert discovery. Integrated Spotify, Ticketmaster, and Stripe APIs for artist previews and ticketing. Built a real-time chat system for artist-venue coordination. Displayed Ticketmaster and user-created events side-by-side, removing the barrier of entry to concert hosting.}
@@ -279,7 +290,7 @@
     \textit{Solar Team Lead}
   }
   \item{
-    \textbf{Birding Club}\hfill\datesmall{Fall 2022 -- Present}
+    \textbf{Birding Club}\hfill\datesmall{Fall 2023 -- Present}
   }
   \item{
     \textbf{Mountaineering \& Climbing Club}\hfill\datesmall{Fall 2022 -- Present}
